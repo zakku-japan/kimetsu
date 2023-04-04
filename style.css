@@ -1,48 +1,44 @@
-/* ===== Webサイト全体のスタイル ===== */
-/* html */
-html {
+html,
+body {
   height: 100%;
 }
 
-/* body */
 body {
   font-family: sans-serif;
   height: 100%;
-  margin: 0;
 }
 
-/* h1見出し */
+button {
+  outline: none;
+  border: none;
+}
+
 h1 {
-  color: #ffffee;/* フォントの色 */
-  font-size: 90px;/* フォントの大きさ */
-  font-family: lobster;/* フォントの種類 */
-  border-style: solid;/* 線の種類 */
-  border-width: 10px;/* 線の太さ */
-  text-align: center;/* 文字・画像を中央にそろえる */
-  border-radius: 90px;/* 枠線の角丸 */
-  padding: 20px;/* 内側の余白 */
-border-color: #a4c1d7;
-  margin: 30px;/* 外側の余白 */
+  color: #ffffff;
+  font-size: 90px;
+  font-family: lobster;
+  border-style: solid;
+  border-color: red;
+  border-width: 20px;
+  text-align: center;
+  border-radius: 90px;
+  padding: 20px;
+  margin: 30px;
 }
 
-/* ===== ヘッダーのスタイル ===== */
-/* ヘッダーの箱 */
 header {
-  background-color:#489995;/* 背景画像 */
-  height: 450px;/* 高さ */
-  padding-top: 150px;/* 上がわの余白 */
+  background-image: url(img/black.jpg);
+  height: 450px;
+  padding-top: 150px;
+  background-size:cover;
 }
 
-
-/* ===== お店紹介のスタイル ===== */
-/* セクション */
 .shop {
-  background-image: url(img/haikei1.jpg);/* 背景の色 */
+  background-color: #ffffee;
   color: #663300;
   padding: 30px;
 }
 
-/* h2見出し */
 .title {
   font-size: 30px;
   border-left-style: solid;
@@ -51,67 +47,56 @@ header {
   margin-bottom: 50px;
 }
 
-/* 段落 */
 .shop p {
   font-size: 20px;
   background-color: #ffffff;
+  ;
   padding: 20px;
   border-radius: 30px;
-  height: 300px;
+  height: 390px;
 }
 
-/* 画像 */
 .shop img {
-  float: right;/* 画像や箱の回り込み */
+  float: right;
 }
 
-
-/* ===== パン紹介のスタイル ===== */
-/* セクション */
 .photo {
   padding: 30px;
-  background-image: url(img/haikei2.jpg );
-  height: 1000px;
+  background-image: url(img/wood.jpg);
 }
 
-/* h2見出し */
 .photo h2 {
-  color: #1a004d;
+  color: #ffffff;
   border-color: #ffcc11;
 }
 
-/* h3見出し */
 .photo h3 {
-  color: #004d25;
+  color: #663300;
 }
 
-/* 段落 */
 .photo p {
   color: #ffffff;
-  clear: left;/* 画像や箱の回り込みをやめる */
+  clear: left;
 }
 
-/* 大きな箱 */
 .big {
   background-color: #ffffff;
-  width: 500px;/* 横幅 */
+  width: 270px;
   padding: 15px;
   margin: 20px;
-  box-shadow: 10px 10px 20px #000000;/* 影 */
+  box-shadow: 10px 10px 20px #000000;
   float: left;
-  transform: rotate(-5deg);/* 回転させる */
 }
 
-/* 小さな箱 */
 .small {
   background-color: #ffffff;
-  width: 240px;
+  width: 220px;
   padding: 15px;
   margin: 20px;
   box-shadow: 10px 10px 20px #000000;
 }
-
-/* 箱 */
-.box {
-  float: left;
+  
+  .box {
+  display:flex;
+  flex-wrap : wrap;
 }
